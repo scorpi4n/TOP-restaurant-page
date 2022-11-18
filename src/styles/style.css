@@ -17,13 +17,50 @@
 	display: grid;
 }
 
+.flex {
+	display: flex;
+}
+
+/* footer */
+footer {
+	background-color: var(--neutral-800);
+	color: var(--neutral-400);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+
+	grid-template-columns: repeat(3, 1fr);
+}
+
+footer>* {
+	align-self: center;
+}
+
+footer>p {
+	text-align: center;
+
+	grid-column: 2 / 3;
+}
+
+footer>ul {
+	list-style-type: none;
+	padding-left: 2rem;
+
+	justify-content: start;
+	gap: 1rem;
+}
+
+footer>ul a {
+	color: inherit;
+	text-decoration: none;
+}
+
 /* header */
 header {
 	background-color: var(--neutral-700);
 	color: var(--neutral-50);
 	padding: 1rem 2rem;
 
-	display: flex;
 	justify-content: space-between;
 }
 
@@ -35,7 +72,6 @@ header li {
 header>ul {
 	list-style-type: none;
 
-	display: flex;
 	gap: 1rem;
 }
 
