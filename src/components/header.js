@@ -4,9 +4,9 @@ export default function () {
 	header.innerHTML = `
 		<h1>Restaurant</h1>
 		<ul class="flex">
-			<li>Home</li>
-			<li>Menu</li>
-			<li>About</li>
+			<li id="home-btn">Home</li>
+			<li id="menu-btn">Menu</li>
+			<li id="about-btn">About</li>
 		</ul>`
 
 	return header

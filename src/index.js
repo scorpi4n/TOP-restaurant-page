@@ -1,12 +1,23 @@
 import './styles/reset.css';
 import './styles/style.css';
 
-import header from './components/header';
 import menu from './pages/menu';
-import footer from './components/footer';
+import pageLoad from './pageLoad';
 
 const content = document.getElementById('content')
 
-content.appendChild(header())
-content.appendChild(menu())
-content.appendChild(footer())
+// load the page contents into #content
+pageLoad()
+
+// add eventlisteners to nav buttons
+document.getElementById('home-btn').onclick = function () {
+	content.appendChild(home())
+}
+
+document.getElementById('menu-btn').onclick = function () {
+	content.appendChild(menu())
+}
+
+document.getElementById('about-btn').onclick = function () {
+	content.appendChild(about())
+}
