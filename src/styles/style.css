@@ -99,3 +99,27 @@ header>ul {
 .menu-item>div {
 	padding: .5rem 1rem;
 }
+
+.menu-item>div>span {
+	margin-block: .5rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-item h4.chip {
+	margin-left: .5rem;
+	padding-inline: .5rem;
+	background-color: var(--neutral-700);
+	border-radius: 1rem;
+}
+
+.menu-item p {
+	--max-lines: 3;
+	--line-height: 1.5;
+
+	max-height: calc(var(--max-lines) * var(--line-height) * 1em);
+	line-height: var(--line-height);
+	overflow: hidden;
+}
