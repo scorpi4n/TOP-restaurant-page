@@ -4,7 +4,7 @@ export default function ({ name, description, price, imagePath, alt }) {
 	menuItem.innerHTML = `
 		<img alt="${alt}" src="${imagePath}"></img>
 		<div>
-			<span>
+			<span class="flex">
 				<h3>${name}</h3>
 				<h4 class="chip">$${price}</h4>
 			</span>
