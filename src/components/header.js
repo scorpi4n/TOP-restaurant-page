@@ -2,7 +2,7 @@ export default function () {
 	const header = document.createElement('header')
 	header.classList.add('flex')
 	header.innerHTML = `
-		<h1>Restaurant</h1>
+		<h2>Restaurant</h2>
 		<ul class="flex">
 			<li id="home-btn">Home</li>
 			<li id="menu-btn">Menu</li>

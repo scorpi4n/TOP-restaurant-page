@@ -1,6 +1,7 @@
 import header from './components/header';
 import menu from './pages/menu';
 import footer from './components/footer';
+import home from './pages/home';
 
 export default function () {
 	const content = document.getElementById('content')
@@ -10,6 +11,7 @@ export default function () {
 	}
 
 	content.appendChild(header())
-	content.appendChild(menu())
+	// content.appendChild(menu())
+	content.appendChild(home())
 	content.appendChild(footer())
 }

@@ -22,6 +22,46 @@
 	align-items: center;
 }
 
+/* home */
+.hero {
+	background-color: #7f1d1d;
+	color: var(--neutral-200);
+	padding: 2rem;
+
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.cta {
+	margin-top: 1rem;
+	margin-bottom: .5rem;
+	padding: 1rem 2rem;
+	background-color: var(--neutral-200);
+	color: var(--neutral-900);
+	font-weight: bold;
+	border: none;
+	border-radius: .5rem;
+}
+
+.selling-point {
+	color: var(--neutral-50);
+}
+
+.selling-point>div {
+	padding: 1rem;
+
+	flex-direction: column;
+	align-items: start;
+	gap: 1rem;
+}
+
+.selling-point>img {
+	aspect-ratio: 16 / 9;
+	background-color: var(--neutral-700);
+	object-fit: cover;
+	max-width: clamp(100px, 50vw, 500px);
+}
+
 /* footer */
 footer {
 	background-color: var(--neutral-800);
