@@ -64,6 +64,7 @@
 
 /* footer */
 footer {
+	padding: 1rem 2rem;
 	background-color: var(--neutral-800);
 	color: var(--neutral-400);
 	position: fixed;
@@ -80,17 +81,36 @@ footer>p {
 	grid-column: 2 / 3;
 }
 
-footer>ul {
+footer ul {
 	list-style-type: none;
-	padding-left: 2rem;
+	margin: 0;
+	padding: 0;
 
 	justify-content: start;
 	gap: 1rem;
 }
 
-footer>ul a {
+footer ul a {
 	color: inherit;
 	text-decoration: none;
+}
+
+footer .container {
+
+	justify-content: end;
+	align-items: start;
+	gap: 1rem;
+}
+
+footer p.title {
+	font-weight: bold;
+	text-decoration: underline .1em;
+}
+
+footer ul:has(p.title) {
+
+	flex-direction: column;
+	gap: 0;
 }
 
 /* header */

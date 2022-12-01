@@ -14,7 +14,21 @@ export default function () {
 				</a>
 			</li>
 		</ul>
-		<p>Copyright github.com/scorpi4n 2022 &#169;</p>`
+		<p>Copyright github.com/scorpi4n 2022 &#169;</p>
+		<div class="container flex">
+			<ul class="flex">
+				<p class="title">Pages</p>
+				<li><a href="">Home</a></li>
+				<li><a href="">Menu</a></li>
+				<li><a href="">About</a></li>
+			</ul>
+			<ul>
+				<p class="title">Contact</p>
+				<li>fakemail@gmail.com</li>
+				<li>+1 (555) 555-5555</li>
+			</ul>
+		</div>
+		`
 
 	return footer
 }
