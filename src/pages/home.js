@@ -1,10 +1,9 @@
 export default function () {
 	const home = document.createElement('div')
 	home.innerHTML = `
-		<div>
 			<div class="hero flex">
 				<h1>Delicious Food</h1>
-				<h2>Classy food for classy people or something</h2>
+				<p>Classy food for classy people or something</p>
 				<button class="cta">Menu <img src="#" alt=""></img></button>
 			</div>
 			<div class="selling-point flex">
@@ -14,7 +13,6 @@ export default function () {
 					</div>
 					<img src="/src/assets/beef.jpg" alt=""></img>
 			</div>
-		</div>
 	`
 
 	return home
