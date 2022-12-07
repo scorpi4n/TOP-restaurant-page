@@ -16,7 +16,7 @@ export default function () {
 		</ul>
 		<p>Copyright github.com/scorpi4n 2022 &#169;</p>
 		<div class="container flex">
-			<ul class="flex">
+			<ul>
 				<p class="title">Pages</p>
 				<li><a href="">Home</a></li>
 				<li><a href="">Menu</a></li>
