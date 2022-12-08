@@ -1,4 +1,4 @@
-import menuItem from '../components/menuItem';
+import MenuItem from '../components/MenuItem';
 import foodItems from '../data/foodItems.js';
 
 export default function () {
@@ -7,7 +7,7 @@ export default function () {
 	menu.classList.add('grid')
 
 	for (let item of foodItems) {
-		menu.appendChild(menuItem(item))
+		menu.appendChild(MenuItem(item))
 	}
 
 	return menu

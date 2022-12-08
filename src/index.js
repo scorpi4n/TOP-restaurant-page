@@ -5,8 +5,9 @@ import home from './pages/home';
 import menu from './pages/menu';
 import about from './pages/about'
 import pageLoad from './pageLoad';
-import header from './components/header';
-import footer from './components/footer';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 const content = document.getElementById('content')
 
@@ -18,9 +19,9 @@ export function unrender() {
 }
 
 export function render(slot) {
-	content.appendChild(header())
+	content.appendChild(Header())
 	content.appendChild(slot())
-	content.appendChild(footer())
+	content.appendChild(Footer())
 
 	document.getElementById('home-btn').onclick = function () {
 		unrender()
