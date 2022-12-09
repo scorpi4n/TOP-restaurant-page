@@ -1,6 +1,6 @@
 #content {
-	position: relative;
 	min-height: 100vh;
+	position: relative;
 }
 
 /* Box sizing rules */
@@ -8,6 +8,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 /* Remove default margin */
