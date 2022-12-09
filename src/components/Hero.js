@@ -8,7 +8,7 @@ export default function () {
 			<p class="title">Delicious Food</p>
 			<p>Classy food for classy people or something</p>
 			<a class="cta">Check out the Menu</a>
-			<a href="#">
+			<a href="#social-proof">
 				<img alt="Down arrow" class="hero-scroll" src="/src/assets/expand-down.png" />
 			</a>
 		</div>

@@ -22,6 +22,33 @@
 	align-items: center;
 }
 
+/* social proof */
+.social-proof {
+	color: var(--neutral-50);
+	padding-inline: 2rem;
+
+	gap: 1rem;
+	grid-template-columns: 1fr 2.5fr;
+}
+
+blockquote {
+	border-inline-start: 3px solid var(--neutral-200);
+	font-style: italic;
+	margin: 1rem;
+	margin-inline-end: 0;
+	padding-inline-start: 1rem;
+}
+
+blockquote::before {
+	content: open-quote;
+	font-size: 3rem;
+	line-height: 1;
+}
+
+blockquote::after {
+	content: close-quote;
+}
+
 /* home */
 .hero,
 .hero-content {
@@ -43,22 +70,22 @@
 	font-weight: 700;
 }
 
-.hero-image {
+.hero-image,
+.hero-gradient {
+	height: 100vh;
 	position: absolute;
-	opacity: .6;
 	top: 0;
 	width: 100vw;
-	height: 100vh;
+}
+
+.hero-image {
+	opacity: .6;
 	object-fit: cover;
 	z-index: -10;
 }
 
 .hero-gradient {
-	position: absolute;
-	height: 100%;
-	width: 100%;
 	z-index: -1;
-	bottom: 0;
 	background-image: linear-gradient(to bottom, transparent, var(--neutral-900));
 }
 
