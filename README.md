@@ -1,13 +1,13 @@
 # TOP-restaurant-page
 
-A simple tabbed single-page website for a resaurant!
+A simple single-page application for a resaurant!
 
-### Tools used
+## Tech stack
 
 - Vanilla HTML/CSS/JavaScript
 - Webpack
 
-### Todos
+## Todos
 
 - Home page
 - Menu page
