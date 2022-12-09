@@ -13,5 +13,5 @@ export default function () {
 	content.appendChild(Header())
 	// content.appendChild(menu())
 	content.appendChild(home())
-	// content.appendChild(Footer())
+	content.appendChild(Footer())
 }
