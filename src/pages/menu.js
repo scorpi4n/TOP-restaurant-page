@@ -6,9 +6,9 @@ export default function () {
 	menu.id = 'menu'
 	menu.classList.add('grid')
 
-	for (let item of foodItems) {
+	foodItems.forEach(item => {
 		menu.appendChild(MenuItem(item))
-	}
+	})
 
 	return menu
 }
