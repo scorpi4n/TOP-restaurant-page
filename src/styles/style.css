@@ -22,6 +22,25 @@
 	align-items: center;
 }
 
+.title {
+	font-size: 3rem;
+}
+
+/* about */
+.about {
+	color: var(--neutral-50);
+}
+
+.about-content {
+	padding-inline: 2rem;
+}
+
+.features {
+	list-style-type: none;
+	margin: 0;
+	padding-inline: 2rem;
+}
+
 /* social proof */
 .social-proof {
 	color: var(--neutral-50);
@@ -66,12 +85,12 @@ blockquote::after {
 }
 
 .hero-content .title {
-	font-size: 2rem;
+	font-size: 4rem;
 	font-weight: 700;
 }
 
 .hero-image,
-.hero-gradient {
+.hero::after {
 	height: 100vh;
 	position: absolute;
 	top: 0;
@@ -81,15 +100,17 @@ blockquote::after {
 .hero-image {
 	opacity: .6;
 	object-fit: cover;
-	z-index: -10;
+	z-index: -1;
 }
 
-.hero-gradient {
+.hero::after {
+	content: '';
 	z-index: -1;
 	background-image: linear-gradient(to bottom, transparent, var(--neutral-900));
 }
 
 .cta {
+	display: inline-block;
 	margin-top: 1rem;
 	margin-bottom: .5rem;
 	padding: .5rem 1rem;
@@ -137,6 +158,10 @@ footer ul {
 
 	justify-content: start;
 	gap: 1rem;
+}
+
+footer ul .title {
+	font-size: inherit;
 }
 
 footer ul a {
