@@ -10,6 +10,7 @@ export default function () {
 	about.classList.add("about")
 
 	const titleEl = document.createElement('h1')
+	titleEl.classList.add("title")
 	titleEl.innerText = "About Us"
 
 	const descriptionEL = document.createElement('p')
