@@ -1,5 +1,5 @@
 export default function ({ name, description, price, imagePath, alt }) {
-	const menuItem = document.createElement('div')
+	const menuItem = document.createElement('li')
 	menuItem.classList.add('menu-item')
 	menuItem.innerHTML = `
 		<img alt="${alt}" src="${imagePath}"></img>
