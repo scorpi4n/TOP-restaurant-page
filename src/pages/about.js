@@ -25,9 +25,9 @@ export default function () {
 
 	about.appendChild(wrapper)
 	about.appendChild(Features(
-		"Local Ingredients",
-		"Home-style Meals",
-		"Fair Prices",
+		["#", "alt text", "Local Ingredients"],
+		["#", "alt text", "Home-style Meals"],
+		["#", "alt text", "Fair Prices"],
 	))
 	about.appendChild(SocialProof())
 

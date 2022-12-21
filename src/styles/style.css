@@ -39,6 +39,13 @@
 	list-style-type: none;
 	margin: 0;
 	padding-inline: 2rem;
+	text-align: center;
+
+	justify-content: space-around;
+}
+
+.feature>* {
+	margin-inline: auto;
 }
 
 /* social proof */
