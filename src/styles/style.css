@@ -23,8 +23,10 @@
 }
 
 .title {
-	font-size: 3rem;
 	color: var(--neutral-50);
+	font-size: 3rem;
+	line-height: 1;
+	padding-block-end: 1rem;
 }
 
 .cta {
@@ -215,8 +217,7 @@ header>ul {
 
 /* menu */
 #menu {
-	padding: 2rem;
-	padding-top: 1rem;
+	padding: 0 2rem;
 }
 
 .menu {
