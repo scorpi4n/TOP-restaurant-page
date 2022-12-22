@@ -104,6 +104,7 @@ blockquote::after {
 	height: 100%;
 	padding: 2rem;
 	position: relative;
+	text-align: center;
 
 	flex-direction: column;
 	gap: 1rem;
