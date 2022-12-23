@@ -34,6 +34,7 @@
 	border: none;
 	border-radius: .5rem;
 	color: inherit;
+	cursor: default;
 	display: inline-block;
 	font-weight: bold;
 	margin-bottom: .5rem;
@@ -58,6 +59,7 @@
 .features {
 	list-style-type: none;
 	margin: 0;
+	padding-block: 1rem;
 	padding-inline: 2rem;
 	text-align: center;
 
@@ -66,6 +68,13 @@
 
 .feature>* {
 	margin-inline: auto;
+}
+
+.text-icon {
+	cursor: default;
+	font-size: 4rem;
+	line-height: 1;
+	padding-bottom: .5rem;
 }
 
 /* social proof */

@@ -1,15 +1,15 @@
-export default function ([image, alt, text]) {
+export default function ([icon, text]) {
 	const feature = document.createElement('li')
 	feature.classList.add("feature")
 
-	const imageEl = document.createElement('img')
-	imageEl.src = image
-	imageEl.alt = alt
+	const iconEl = document.createElement('p')
+	iconEl.classList.add("text-icon")
+	iconEl.innerText = icon
 
 	const descriptionEl = document.createElement('p')
 	descriptionEl.innerText = text
 
-	feature.appendChild(imageEl)
+	feature.appendChild(iconEl)
 	feature.appendChild(descriptionEl)
 
 	return feature
