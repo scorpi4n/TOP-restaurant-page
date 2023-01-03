@@ -33,7 +33,7 @@
 	background-color: hsl(0, 63%, 31%);
 	border: none;
 	border-radius: .5rem;
-	color: inherit;
+	color: var(--neutral-100);
 	cursor: default;
 	display: inline-block;
 	font-weight: bold;
@@ -152,6 +152,17 @@ blockquote::after {
 	margin-inline: auto;
 	position: absolute;
 	right: 0;
+}
+
+.menu-preview {
+	--bottom-padding: 3rem;
+
+	padding: calc(var(--bottom-padding) - 1rem) 2rem var(--bottom-padding);
+}
+
+.menu-preview>.grid {
+	gap: 1rem;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 /* footer */
