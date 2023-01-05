@@ -1,56 +1,56 @@
-import './styles/reset.css';
-import './styles/style.css';
+import "./styles/reset.css";
+import "./styles/style.css";
 
-import home from './pages/home';
-import menu from './pages/menu';
-import about from './pages/about'
-import pageLoad from './pageLoad';
+import pageLoad from "./pageLoad";
+import about from "./pages/about";
+import home from "./pages/home";
+import menu from "./pages/menu";
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-const content = document.getElementById('content')
+const content = document.getElementById("content");
 
 // load the page contents into #content
-pageLoad()
+pageLoad();
 
 export function unrender() {
-	content.innerHTML = ""
+	content.innerHTML = "";
 }
 
 export function render(slot) {
-	content.appendChild(Header())
-	content.appendChild(slot())
-	content.appendChild(Footer())
+	content.appendChild(Header());
+	content.appendChild(slot());
+	content.appendChild(Footer());
 
-	document.getElementById('home-btn').onclick = function () {
-		unrender()
-		render(home)
-	}
+	document.getElementById("home-btn").onclick = function () {
+		unrender();
+		render(home);
+	};
 
-	document.getElementById('menu-btn').onclick = function () {
-		unrender()
-		render(menu)
-	}
+	document.getElementById("menu-btn").onclick = function () {
+		unrender();
+		render(menu);
+	};
 
-	document.getElementById('about-btn').onclick = function () {
-		unrender()
-		render(about)
-	}
+	document.getElementById("about-btn").onclick = function () {
+		unrender();
+		render(about);
+	};
 }
 
 // add eventlisteners to nav buttons
-document.getElementById('home-btn').onclick = function () {
-	unrender()
-	render(home)
-}
+document.getElementById("home-btn").onclick = function () {
+	unrender();
+	render(home);
+};
 
-document.getElementById('menu-btn').onclick = function () {
-	unrender()
-	render(menu)
-}
+document.getElementById("menu-btn").onclick = function () {
+	unrender();
+	render(menu);
+};
 
-document.getElementById('about-btn').onclick = function () {
-	unrender()
-	render(about)
-}
+document.getElementById("about-btn").onclick = function () {
+	unrender();
+	render(about);
+};

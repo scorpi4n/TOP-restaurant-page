@@ -1,6 +1,6 @@
 export default function () {
-	const footer = document.createElement('footer')
-	footer.classList.add('grid')
+	const footer = document.createElement("footer");
+	footer.classList.add("grid");
 	footer.innerHTML = `
 		<ul class="flex">
 			<li>
@@ -28,7 +28,7 @@ export default function () {
 				<li>+1 (555) 555-5555</li>
 			</ul>
 		</div>
-		`
+		`;
 
-	return footer
+	return footer;
 }

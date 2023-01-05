@@ -1,33 +1,33 @@
 {
-  "name": "top-restaurant-page",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "watch": "webpack --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scorpi4n/TOP-restaurant-page.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/scorpi4n/TOP-restaurant-page/issues"
-  },
-  "homepage": "https://github.com/scorpi4n/TOP-restaurant-page#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "css-loader": "^6.7.2",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.7.2",
-    "postcss": "^8.4.20",
-    "postcss-loader": "^7.0.2",
-    "postcss-preset-env": "^7.8.3",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0"
-  }
+	"name": "top-restaurant-page",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack",
+		"watch": "webpack --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/scorpi4n/TOP-restaurant-page.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/scorpi4n/TOP-restaurant-page/issues"
+	},
+	"homepage": "https://github.com/scorpi4n/TOP-restaurant-page#readme",
+	"devDependencies": {
+		"autoprefixer": "^10.4.13",
+		"css-loader": "^6.7.2",
+		"html-webpack-plugin": "^5.5.0",
+		"mini-css-extract-plugin": "^2.7.2",
+		"postcss": "^8.4.20",
+		"postcss-loader": "^7.0.2",
+		"postcss-preset-env": "^7.8.3",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.0"
+	}
 }

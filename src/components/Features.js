@@ -1,12 +1,12 @@
-import Feature from "./Feature"
+import Feature from "./Feature";
 
 export default function (...features) {
-	const featuresEl = document.createElement('ul')
-	featuresEl.classList.add("features", "flex")
+	const featuresEl = document.createElement("ul");
+	featuresEl.classList.add("features", "flex");
 
-	features.forEach(feature => {
-		featuresEl.appendChild(Feature(feature))
-	})
+	features.forEach((feature) => {
+		featuresEl.appendChild(Feature(feature));
+	});
 
-	return featuresEl
+	return featuresEl;
 }

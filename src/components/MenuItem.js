@@ -1,6 +1,6 @@
 export default function ({ name, description, price, imagePath, alt }) {
-	const menuItem = document.createElement('li')
-	menuItem.classList.add('menu-item')
+	const menuItem = document.createElement("li");
+	menuItem.classList.add("menu-item");
 	menuItem.innerHTML = `
 		<img alt="${alt}" src="${imagePath}"></img>
 		<div>
@@ -9,7 +9,7 @@ export default function ({ name, description, price, imagePath, alt }) {
 				<h4 class="chip">$${price}</h4>
 			</span>
 			<p>${description}</p>
-		</div>`
+		</div>`;
 
-	return menuItem
+	return menuItem;
 }

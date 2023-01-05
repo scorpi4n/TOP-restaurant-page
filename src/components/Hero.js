@@ -1,6 +1,6 @@
 export default function () {
-	const Hero = document.createElement('div')
-	Hero.classList.add('hero')
+	const Hero = document.createElement("div");
+	Hero.classList.add("hero");
 	Hero.innerHTML = `
 		<img class="hero-image" src="/src/assets/beef.jpg" aria-hidden="true"/>
 		<div class="hero-content flex">
@@ -11,7 +11,7 @@ export default function () {
 				<img alt="Down arrow" class="hero-scroll" src="/src/assets/expand-down.png" />
 			</a>
 		</div>
-	`
+	`;
 
-	return Hero
+	return Hero;
 }
