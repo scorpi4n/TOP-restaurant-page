@@ -1,6 +1,8 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+// import about from "./pages/about";
 import home from "./pages/home";
+// import menu from "./pages/menu";
 
 export default function () {
 	const content = document.getElementById("content");
@@ -11,7 +13,7 @@ export default function () {
 
 	content.appendChild(Header());
 	content.appendChild(home());
-	// content.appendChild(menu())
-	// content.appendChild(about())
+	// content.appendChild(menu());
+	// content.appendChild(about());
 	content.appendChild(Footer());
 }
