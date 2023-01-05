@@ -9,7 +9,6 @@ A simple single-page application for a resaurant!
 
 ## Todos
 
-- Home page
-- Menu page
-- About page
+- Update all JavaScript files to not use `.innerHTML`
+- Set up gag page for contact form submission
 - Accessibility <3
