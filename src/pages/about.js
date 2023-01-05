@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm";
 import Features from "../components/Features";
 import SocialProof from "../components/SocialProof";
 
@@ -17,6 +18,7 @@ export default function () {
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
 	const ctaEl = document.createElement("a");
+	ctaEl.href = "#contact-form";
 	ctaEl.classList.add("cta");
 	ctaEl.innerText = "Contact Us";
 
@@ -33,6 +35,7 @@ export default function () {
 		)
 	);
 	about.appendChild(SocialProof());
+	about.appendChild(ContactForm());
 
 	// contact form
 	return about;

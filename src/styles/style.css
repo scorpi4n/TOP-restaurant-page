@@ -29,22 +29,80 @@
 	padding-block-end: 1rem;
 }
 
+.btn,
 .cta {
-	background-color: hsl(0, 63%, 31%);
 	border: none;
 	border-radius: .5rem;
-	color: var(--neutral-100);
 	cursor: default;
 	display: inline-block;
 	font-weight: bold;
+	text-decoration: none;
+	padding: .5rem 1rem;
 	margin-bottom: .5rem;
 	margin-top: 1rem;
-	padding: .5rem 1rem;
+}
+
+.btn {
+	background-color: var(--neutral-300);
+	color: var(--neutral-900);
+}
+
+.btn:hover,
+.btn:focus-visible {
+	background-color: var(--neutral-400);
+}
+
+.cta {
+	background-color: hsl(0, 63%, 31%);
+	color: var(--neutral-100);
 }
 
 .cta:hover,
 .cta:focus-visible {
 	background-color: hsl(0, 63%, 26%);
+}
+
+/* forms */
+form {
+	display: block;
+	margin-inline: auto;
+	margin-bottom: 1rem;
+	max-width: 50%;
+}
+
+label {
+	display: block;
+}
+
+input {
+	margin-bottom: .5rem;
+	min-height: 1.75rem;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 5rem;
+}
+
+input,
+textarea {
+	border: none;
+	border-radius: .5rem;
+	width: 100%;
+}
+
+form>.btn:first-of-type {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+form>.btn:last-of-type {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+form>.btn {
+	width: 50%;
 }
 
 /* about */
