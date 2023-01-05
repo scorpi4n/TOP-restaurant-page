@@ -13,7 +13,7 @@ export default function () {
 	MenuPreview.appendChild(arrayEl);
 
 	const cta = document.createElement("button");
-	cta.classList.add("cta", "flex");
+	cta.classList.add("cta", "menu-btn");
 	cta.innerText = "Check out the menu!";
 	MenuPreview.appendChild(cta);
 

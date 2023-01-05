@@ -1,56 +1,42 @@
-import "./styles/reset.css";
-import "./styles/style.css";
-
-import pageLoad from "./pageLoad";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import about from "./pages/about";
 import home from "./pages/home";
 import menu from "./pages/menu";
-
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import "./styles/reset.css";
+import "./styles/style.css";
 
 const content = document.getElementById("content");
 
 // load the page contents into #content
-pageLoad();
+loadPage(home);
 
-export function unrender() {
+// empty out DOM to prevent multiple pages loading
+function unrender() {
 	content.innerHTML = "";
 }
 
-export function render(slot) {
+function render(slot) {
 	content.appendChild(Header());
 	content.appendChild(slot());
 	content.appendChild(Footer());
 
 	document.getElementById("home-btn").onclick = function () {
-		unrender();
-		render(home);
+		loadPage(home);
 	};
 
-	document.getElementById("menu-btn").onclick = function () {
-		unrender();
-		render(menu);
-	};
+	document.querySelectorAll(".menu-btn").forEach((btn) => {
+		btn.onclick = function () {
+			loadPage(menu);
+		};
+	});
 
 	document.getElementById("about-btn").onclick = function () {
-		unrender();
-		render(about);
+		loadPage(about);
 	};
 }
 
-// add eventlisteners to nav buttons
-document.getElementById("home-btn").onclick = function () {
+function loadPage(page) {
 	unrender();
-	render(home);
-};
-
-document.getElementById("menu-btn").onclick = function () {
-	unrender();
-	render(menu);
-};
-
-document.getElementById("about-btn").onclick = function () {
-	unrender();
-	render(about);
-};
+	render(page);
+}
